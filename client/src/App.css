@@ -1,0 +1,47 @@
+body {
+    margin :0;
+    overflow-x: hidden;
+
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 800px;
+    height: 200px;
+    background-color: #e4ddfa;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .left {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .right {
+    width: 75%; 
+    height: 100%;
+    
+}
+
+.container .left .play-button {
+    width: 100px;
+    fill: black;
+}
+
+.container .left .play-button:hover {
+    fill: #8f1ce9;
+    cursor: pointer;
+}
