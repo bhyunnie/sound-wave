@@ -1,47 +1,56 @@
 body {
-    margin :0;
-    overflow-x: hidden;
-
-}
-
-.wrapper {
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-    width: 800px;
-    height: 200px;
-    background-color: #e4ddfa;
-    border-radius: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.wave-wrapper {
+    width: 100%;
+    height: 50vh;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.wave-container {
+    margin: 30px auto 0 auto;
+    width: 95%;
+    height: 50%;
+}
+
+.rest-wrapper {
+    width: 100%;
+    height: 50%;
     display: flex;
     flex-direction: row;
-}
-
-.container .left {
-    width: 25%;
-    height: 100%;
-    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
-.container .right {
-    width: 75%; 
-    height: 100%;
-    
-}
-
-.container .left .play-button {
-    width: 100px;
-    fill: black;
-}
-
-.container .left .play-button:hover {
-    fill: #8f1ce9;
+.rest-wrapper button {
+    width : 20%;
+    height: 70px;
+    font-size: 22px;
+    font-weight: 700;
+    background-color: #e4ddfa;
+    border: 0;
     cursor: pointer;
+    border-radius: 10px;
+}
+
+.rest-wrapper button:hover {
+    color: #cb21fe
+}
+
+.rest-wrapper p {
+    width: 20%;
+}
+
+.rest-wrapper .wave-timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
 }
